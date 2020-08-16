@@ -48,3 +48,6 @@ const diamond = () =>{
 }
 
 //I just placed a new comment to see if it works
+
+
+//Wow it works! Congrats me on finally understanding git!
