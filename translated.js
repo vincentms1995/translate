@@ -46,3 +46,5 @@ const diamond = () =>{
         space--;
     }
 }
+
+//I just placed a new comment to see if it works
