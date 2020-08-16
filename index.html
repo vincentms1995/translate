@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>C to JS</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./resources/styles/css/styles.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inconsolata&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav>
+            <h1>C to JS</h1>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#about">About</a></li>
+              </ul>
+        </nav>
+        <div id='flexbox-container'>
+            <section id='helloWorld' class='container'>
+                <h3>Press the button so that you could input hello world in JS</h3>
+                <button type="button" onClick='helloWorld()'>Press me!</button>
+            </section>
+            <section id ='addAll' class='container'>
+                <h3>
+                    This is an add all program 
+                </h3>
+                <p>
+                    #include<stdio.h><br>
+                        int main()<br>
+                        {<br>
+                            int n,sum,c,value;<br>
+                            printf("Please enter how many integers you <br>want to add\n");<br>
+                            scanf("%d", &n);<br>
+                            <br>
+                           printf("Enter %d integers\n", n);<br>
+                           for( c=1; c<=n;c++)<br>
+                           {<br>
+                               scanf("%d",&value);<br>
+                               sum = sum + value;<br>
+                            }<br> 	
+                            
+                            printf("The sum of entered integers is %d", sum);<br>
+                        }<br>
+                </p>
+                <button onClick='addAll()'>Click me to run</button>
+            </section>
+            <section id='decToBinary' class='container'>
+                <h3>
+                    This is a program for converting decimal to binary 
+                </h3>
+                <p>
+                    #include<stdio.h><br><br>
+    
+                        int main()<br>
+                        {<br>
+                            int a,b=2,c,d[1000],ctr,max;<br>
+                            printf("Please enter any integer and I will convert it to binary\n");<br>
+                            scanf("%d",&a);<br>
+                            for(ctr=a;ctr>=0;ctr--)<br>
+                            {<br>
+                                d=a%b;<br>
+                                c=a/b;<br>
+                                a=c;<br>	
+                                printf("%d",d);<br>
+                            }<br>
+                            
+                            
+                        }<br>
+                </p>
+                <button onClick='binary()'>Click me to run!</button>
+            </section>
+            <section id="diamond" class="container">
+                <p>
+                    This is a diamond program I made 4 years ago
+                </p>
+                <button onclick="diamond()">Execute</button>
+                <div id='display-diamond'>
+    
+                    
+                </div>
+            </section>
+            <section id="about" class="container">
+                <h3>About Me!</h3>
+                <p>Hello and Good day! My name is <h2>Vincent M. Samson</h2> and I aspire to become a <h2>Web Developer</h2></p>
+            </section>
+        </div>
+        
+        <script src='./translated.js'></script>
+        <script src="" async defer></script>
+    </body>
+</html>
