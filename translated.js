@@ -51,3 +51,13 @@ const diamond = () =>{
 
 
 //Wow it works! Congrats me on finally understanding git!
+
+const quadratic = () =>{
+    let a = parseFloat(prompt("Please enter the value of a: "));
+    let b = parseFloat(prompt("Please enter the value of b: "));
+    let c = parseFloat(prompt("Please enter the value of c: "));
+    let x1 = ((b * -1) + Math.sqrt(Math.pow(b,2)-(4 * a * c)))/(2 * a);
+    let x2 = ((b * -1) - Math.sqrt(Math.pow(b,2)-(4 * a * c)))/(2 * a);
+    console.log(x1);
+    console.log(x2);
+}

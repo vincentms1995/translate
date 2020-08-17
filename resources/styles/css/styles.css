@@ -55,6 +55,10 @@ nav li a:hover {
   background-color: #111;
 }
 
+#diamond {
+  overflow: hidden;
+}
+
 .container {
   margin: 10px;
   height: 500px;

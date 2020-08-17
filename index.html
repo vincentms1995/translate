@@ -17,8 +17,8 @@
             <h1>C to JS</h1>
             <ul>
                 <li><a href="#home">Home</a></li>
-                <li><a href="#news">News</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <!-- <li><a href="#news">News</a></li>
+                <li><a href="#contact">Contact</a></li> -->
                 <li><a href="#about">About</a></li>
               </ul>
         </nav>
@@ -86,6 +86,33 @@
                     
                 </div>
             </section>
+
+            <section id="quadratic" class="container">
+                <h3>In this section this will be the quadratic formula</h3>
+                <span>Note: Please Check Console</span>
+                <p>
+                    #include<stdio.h><br>
+                        #include<math.h><br>
+                            <br>
+                        int main()<br>
+                        {<br>
+                            float a,b,c,x1,x2;<br>
+                            printf("Enter the values of a,b,c\n");<br>
+                            scanf(" %f %f %f",&a,&b,&c);<br>
+                            x1=((-b)+sqrt(pow(b,2)-(4*a*c)))/(2*a);<br>
+                            x2=((-b)-sqrt(pow(b,2)-(4*a*c)))/(2*a);<br>
+                            printf("x1=%f\n",x1);<br>
+                            printf("x2=%f",x2);<br>
+                        }<br>
+                </p>
+                <button onclick="quadratic()">
+                    Click me to Execute quadratic
+                </button>
+
+            </section>
+
+
+
             <section id="about" class="container">
                 <h3>About Me!</h3>
                 <p>Hello and Good day! My name is <h2>Vincent M. Samson</h2> and I aspire to become a <h2>Web Developer</h2></p>
