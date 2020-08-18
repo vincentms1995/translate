@@ -5,3 +5,7 @@ I also did this project so that I can practice some HTML and CSS
 I don't know yet how you guys will comment on my work but any feedback to make me better will be taken.
 
 -Vince 8/16/2020
+
+I think that I should do more translations today, something easy.
+
+-Vince 8/18/2020
