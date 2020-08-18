@@ -1,3 +1,7 @@
+Vincent's Dev Logs!
+
+
+
 This is a project that I did so that I can practice more vanilla Javascript
 
 I also did this project so that I can practice some HTML and CSS
@@ -16,5 +20,9 @@ Found out that it is called smooth scrolling but I found a Jquery version. I jus
 added objects where I think would be able to help to scroll smoothly. I will try it right now.
 
 I found out how it works but now I want to do that if I click the hyperlink I will smooth scroll to the about div
+
+changed scope of project to become my portfolio website to show what kind of things I can do with this webpage.
+
+Today I will sleep earlier so that I can have more time tomorrow in making changes in this personal project
 
 -Vince 8/18/2020

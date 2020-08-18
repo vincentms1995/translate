@@ -1,3 +1,5 @@
+$bgColor :#389583;
+$darkColor: #05396b;
 html{
     scroll-behavior: smooth;
     // HAHAHHA THIS WAS THE SOLUTION!!!!!!!
@@ -5,7 +7,7 @@ html{
 body{ 
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
-    background-color: #389583;
+    background-color: $bgColor;
     margin: 0px;
     
 }
@@ -69,10 +71,10 @@ nav{
     margin: 10px;
     height: 500px;
     width: 500px;
-    border: 10px solid #05396b;
+    border: 10px solid $darkColor;
     border-radius: 10px;
     padding: 10px;
-    color: #05396b;
+    color: $darkColor;
     background-color: #5cdb94;
     h3{
         color: #edf5e0;
@@ -80,7 +82,7 @@ nav{
     button{
         border-style: none;
         border-radius: 10px;
-        background-color: #05396b;
+        background-color: $darkColor;
         color: #edf5e0; 
         height: 30px;
         width: 100x;
