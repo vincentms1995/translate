@@ -1,3 +1,7 @@
+html{
+    scroll-behavior: smooth;
+    // HAHAHHA THIS WAS THE SOLUTION!!!!!!!
+}
 body{ 
     font-family: 'Inconsolata', monospace;
     font-size: 20px;
@@ -15,7 +19,7 @@ body{
     align-content: center;
 }
 nav{
-    
+    position: relative;
     margin: 0px;
     h1{
         margin: 10px;
