@@ -61,6 +61,10 @@ nav li a:hover {
   height: 200px;
   width: auto;
   margin: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-items: center;
 }
 
 #diamond {
@@ -108,6 +112,7 @@ nav li a:hover {
 }
 
 #myBtn:hover {
-  background-color: #555;
+  background-color: #5cdb94;
+  color: #05396b;
 }
 /*# sourceMappingURL=styles.css.map */

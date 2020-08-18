@@ -53,6 +53,8 @@ nav{
     height: 200px;
     width: auto;
     margin: 15px;
+    align-items: center;
+    justify-items: center;
 }
 
 #diamond{
@@ -99,5 +101,6 @@ nav{
   }
   
   #myBtn:hover {
-    background-color: #555;
+    background-color: #5cdb94;
+    color: #05396b;
   }
