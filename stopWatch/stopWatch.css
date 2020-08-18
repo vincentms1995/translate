@@ -1,0 +1,47 @@
+body {
+  background-color: orange;
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0px;
+}
+
+.container {
+  height: 300px;
+  width: auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 10px;
+  border: 10px solid;
+}
+
+.container h1 {
+  font-size: 50px;
+}
+
+.container button {
+  font-size: large;
+  margin: 20px;
+  padding: 10px;
+  height: 50px;
+  border-style: none;
+  border-radius: 10px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Roboto', sans-serif;
+}
+/*# sourceMappingURL=stopWatch.css.map */
