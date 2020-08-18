@@ -1,7 +1,7 @@
 Vincent's Dev Logs!
 
 
-
+<log>
 This is a project that I did so that I can practice more vanilla Javascript
 
 I also did this project so that I can practice some HTML and CSS
@@ -9,7 +9,9 @@ I also did this project so that I can practice some HTML and CSS
 I don't know yet how you guys will comment on my work but any feedback to make me better will be taken.
 
 -Vince 8/16/2020
+</log>
 
+<log>
 I think that I should do more translations today, something easy.
 
 Today I want to add a part where when I click the <a> about tag it would hover me to the about section
@@ -26,3 +28,4 @@ changed scope of project to become my portfolio website to show what kind of thi
 Today I will sleep earlier so that I can have more time tomorrow in making changes in this personal project
 
 -Vince 8/18/2020
+</log>
