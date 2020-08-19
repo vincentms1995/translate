@@ -5,8 +5,11 @@ document.getElementById("stopWatch");
 let milliSecondsDisplay = document.getElementById('milliSeconds');
 let secondsDisplay = document.getElementById('seconds');
 let minutesDisplay= document.getElementById("minutes");
-
-
+let hoursDisplay= document.getElementById("hours");
+let difference =0;
+let savedTime =0;
+let isRunning = false;
+let isPaused = false;
 const createButton = (name, event) =>{
     let node = document.createElement("button");
     let text = document.createTextNode(name);
@@ -16,13 +19,17 @@ const createButton = (name, event) =>{
 }
 
 const startTimer = () =>{
+    isRunning = true;
+    if(isPaused === true)
     console.log("Started Timer");
     startTime = Date.now();
-    let msec = 0;
-    let sec = 0;
-    let min = 0;
     interval = setInterval(function(){
-        let difference = Date.now() - startTime;
+        if(isPaused === true){
+            difference = Date.now() - startTime + savedTime;
+        }
+        else{
+            difference = Date.now() - startTime;
+        }
         let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((difference % (1000 * 60)) / 1000);
@@ -34,7 +41,7 @@ const startTimer = () =>{
         milliSecondsDisplay.textContent = milliseconds;
         secondsDisplay.textContent = seconds;
         minutesDisplay.textContent = minutes;
-
+        hoursDisplay.textContent = hours;
     });
 }
 
@@ -42,6 +49,9 @@ const startTimer = () =>{
 const stopTimer = () =>{
     console.log("Ended Timer");
     clearInterval(interval);
+    savedTime = difference;
+    isRunning = false;
+    isPaused = true;
 
 }
 
@@ -49,6 +59,8 @@ const resetTimer = () =>{
     console.log("Reset Timer");
     milliSeconds.textContent = '00';
     seconds.textContent = '00';
+    isRunning = false;
+    isPaused = false;
 
 }
 

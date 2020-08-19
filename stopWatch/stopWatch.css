@@ -2,7 +2,6 @@ body {
   font-family: 'Roboto', sans-serif;
   background-image: -webkit-gradient(linear, right top, left top, from(#bdc3c7), to(#2c3e50));
   background-image: linear-gradient(to left, #bdc3c7, #2c3e50);
-  padding: 0px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
