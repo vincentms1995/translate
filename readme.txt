@@ -40,6 +40,8 @@ Doing this sanity check so that my head can wrap around the idea behind creating
 8:03 am
 Finished the layout of the timer
 
+note: Today I finished my stopwatch but I want to only display numbers 0 - 99 for milliseconds maybe tomorrow
+      or another time haha. 
 
 -Vince 8/19/2020
 </log>

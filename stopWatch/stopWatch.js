@@ -24,20 +24,24 @@ const startTimer = () =>{
     console.log("Started Timer");
     startTime = Date.now();
     interval = setInterval(function(){
+
+
         if(isPaused === true){
             difference = Date.now() - startTime + savedTime;
         }
         else{
             difference = Date.now() - startTime;
         }
+
+
         let hours = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
         let minutes = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60));
         let seconds = Math.floor((difference % (1000 * 60)) / 1000);
-        let milliseconds = Math.floor((difference % (1000 * 60)) / 100);
+        let milliseconds = Math.floor((difference % (1000 * 60)) / 10);
         hours = (hours < 10) ? "0" + hours : hours;
         minutes = (minutes < 10) ? "0" + minutes : minutes;
         seconds = (seconds < 10) ? "0" + seconds : seconds;
-        milliseconds = (milliseconds < 100) ? (milliseconds < 10) ? "00" + milliseconds : "0" + milliseconds : milliseconds;
+        milliseconds = (milliseconds < 10) ? "0" + milliseconds : milliseconds;
         milliSecondsDisplay.textContent = milliseconds;
         secondsDisplay.textContent = seconds;
         minutesDisplay.textContent = minutes;
@@ -57,8 +61,10 @@ const stopTimer = () =>{
 
 const resetTimer = () =>{
     console.log("Reset Timer");
-    milliSeconds.textContent = '00';
-    seconds.textContent = '00';
+    hoursDisplay.textContent ='00';
+    minutesDisplay.textContent= '00';
+    milliSecondsDisplay.textContent = '00';
+    secondsDisplay.textContent = '00';
     isRunning = false;
     isPaused = false;
 
