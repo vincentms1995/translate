@@ -36,5 +36,10 @@ Good morning I woke up early today around 5 am and started working around 6 am
 Today I started making a new section in this webpage which is a timer
 Trying to learn the DOM and cleaning up my code so that there would be not so much javaScript on my html pages
 Doing this sanity check so that my head can wrap around the idea behind creating buttons in my stop watch.
+
+8:03 am
+Finished the layout of the timer
+
+
 -Vince 8/19/2020
 </log>
