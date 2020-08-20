@@ -1,0 +1,25 @@
+body{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to left, rgb(69, 124, 69), rgb(49, 91, 131));
+   
+}
+
+#ticTacToe{
+    height: 300px;
+    width: 300px;
+    display: grid;
+    grid-template-rows: 100px 100px 100px;
+    grid-template-columns: 100px 100px 100px;
+    border: 20px solid blue;
+}
+
+.container{
+    margin: 0px;
+    padding: 0px;
+    height: 100px;
+    width: 100px;
+    border: 1px solid rgba(4, 4, 19, 0.671);
+}

@@ -45,3 +45,12 @@ note: Today I finished my stopwatch but I want to only display numbers 0 - 99 fo
 
 -Vince 8/19/2020
 </log>
+
+<log>
+So today I am going to do an tic tac toe game for two humans
+
+maybe if I finish this I will also look into AI so that it can be a much better application.
+Right now as of 9:19 am it's going to be research time.
+
+-Vince 8/20/20
+</log>

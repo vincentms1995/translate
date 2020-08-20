@@ -1,0 +1,35 @@
+body {
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-image: -webkit-gradient(linear, right top, left top, from(#457c45), to(#315b83));
+  background-image: linear-gradient(to left, #457c45, #315b83);
+}
+
+#ticTacToe {
+  height: 300px;
+  width: 300px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 100px 100px;
+      grid-template-rows: 100px 100px 100px;
+  -ms-grid-columns: 100px 100px 100px;
+      grid-template-columns: 100px 100px 100px;
+  border: 20px solid blue;
+}
+
+.container {
+  margin: 0px;
+  padding: 0px;
+  height: 100px;
+  width: 100px;
+  border: 1px solid rgba(4, 4, 19, 0.671);
+}
+/*# sourceMappingURL=ticTacToe.css.map */
