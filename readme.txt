@@ -52,5 +52,55 @@ So today I am going to do an tic tac toe game for two humans
 maybe if I finish this I will also look into AI so that it can be a much better application.
 Right now as of 9:19 am it's going to be research time.
 
+Planning time
+Psuedocode:
+- initialize turn checkers
+- isX = true
+- isO = false
+- display win counter
+- display game cells
+- display reset button
+- display name
+- start game
+- 1st turn is X
+- Display X on clicked cell
+- Next turn is O 
+- Display O on clicked cell 
+- do this until X or O wins by connecting 3 game cells 
+- if no one wins Draw!!!
+- if X win add winCounter X
+- if O win add winCounter O
+- if reset button clicked reset board
+
+2 dim array
+winning combinations are 
+[0,0] [0,1] [0,2]; first row
+[1,0] [1,1] [1,2]; second row
+[2,0] [2,1] [2,2]; third row
+
+[0,0]
+[1,0] first col
+[2,0] 
+
+[0,1]
+[1,1] second col
+[2,1]
+
+[0,2]
+[1,2] third col
+[2,2]
+
+[0,0]
+      [1,1]        diagonal 1
+            [2,2]
+______________________
+            
+            [0,2]
+      [1,1]        diagonal 2
+[2,0]
+
+max number of turns = 9
+min number of turns for win = 5
+
 -Vince 8/20/20
 </log>
