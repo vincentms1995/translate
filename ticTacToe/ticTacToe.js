@@ -1,4 +1,5 @@
 let isX = true;
+let divElements=[];
 const createButton = (name, event) =>{
     let node = document.createElement("button");
     let text = document.createTextNode(name);
@@ -9,19 +10,23 @@ const createButton = (name, event) =>{
 
 const createDiv = (name, event) =>{
     let node = document.createElement("div");
-    let text = document.createTextNode(name);
-    node.setAttribute("onClick", "placeTurn(this.id)");
+    // let text = document.createTextNode(name);
+    node.setAttribute("onClick", "placeTurn(this)");
     node.setAttribute("id",name)
     node.setAttribute("class", "container");
-    node.appendChild(text);
+    // node.appendChild(text);
     document.getElementById("ticTacToe").appendChild(node);
+    divElements.push(node);
 }
 
 const resetMe = () =>{
-    document.getElementsByClassName("container").innerHTML= '';
+    document.getElementById("TicTacToe").innerHTML= '';
+    for(let ctr = 0; ctr < divElements.length; ctr++){
+        divElements[ctr].innerHTML ="";
+    }
 }
 
-const placeTurn = (id) =>{
+const placeTurn = (obj) =>{
     // console.log("You clicked me!");
     // the code on top works
     
@@ -29,11 +34,15 @@ const placeTurn = (id) =>{
     {
         console.log('X turn');
         isX = false;
-        let textNode = document.createTextNode("X");
-        console.log(id);
+        
+        obj.innerHTML = 'X';
+        
+        
+        console.log(obj);
     }
     else{
         console.log('O turn');
+        obj.innerHTML = 'O';
         isX = true;
     }
 }

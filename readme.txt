@@ -104,16 +104,17 @@ min number of turns for win = 5
 -Vince 8/20/20
 </log>
 
-How do you picture coordinating and communicating with a team if you’re not in the same location?
-I picture it via zoom or any software that has the capability of communicating. It could be through emails, calls, texts, and video calls;
+<log>
+Today I am going to resume building the tic tac toe game today have a game plan and I am going to try to
+implement it in my code.
 
-What will you do if there is a time sensitive problem with a project and the rest of your team is offline?
-I will have to call them through their cell phone numbers if they are offline. 
-If they can't be reached I will try to contact the project manager. If I am the project manager I will try to contact
-the person who can help solve the problem.
+- pass current object clicked using (this)
+- 10:08 Implemented the idea and it worked.
 
-What are some distractions that you anticipate in your remote workplace? How will you avoid them?
-House chores, family, and the internet. For house chores it would not be avoided but a time will be set for it, advisable time would be before 
-or after the shift. For family, there are some unavoidable distractions but ground rules can be placed during the work shift. For the internet
-there are extensions which block websites so that you would not be able to go to them during work hours. This would help so that the I can focus 
-on the task on hand.
+- problem - how to clear all the elements when I click reset me
+- I don't like the font and color
+
+I will push this version on my repo so that can save my progress 
+
+-Vince 8/21/20
+</log>
