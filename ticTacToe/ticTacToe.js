@@ -16,14 +16,17 @@ const createDiv = (name, event) =>{
     node.setAttribute("class", "container");
     // node.appendChild(text);
     document.getElementById("ticTacToe").appendChild(node);
-    divElements.push(node);
+    divElements.push(name);
 }
 
 const resetMe = () =>{
-    document.getElementById("TicTacToe").innerHTML= '';
-    for(let ctr = 0; ctr < divElements.length; ctr++){
-        divElements[ctr].innerHTML ="";
-    }
+    // console.log(divElements);
+    divElements.forEach(element = (item, index) => {
+        // console.log(`ID: ${item} Index: ${index}`)
+        let div = document.getElementById(item)
+        div.innerHTML = '';
+        div.style.pointerEvents = 'auto';
+    });
 }
 
 const placeTurn = (obj) =>{
@@ -33,17 +36,16 @@ const placeTurn = (obj) =>{
     if(isX)
     {
         console.log('X turn');
-        isX = false;
-        
+        isX = false;  
         obj.innerHTML = 'X';
+        obj.style.pointerEvents = "none";
         
-        
-        console.log(obj);
     }
     else{
         console.log('O turn');
         obj.innerHTML = 'O';
         isX = true;
+        obj.style.pointerEvents = "none";
     }
 }
 
@@ -52,5 +54,5 @@ for(let ctr = 1; ctr<=9; ctr++){
     createDiv(`game-cell-${ctr}`, placeTurn);
 }
 
-
-createButton("Reset", resetMe);
+// bring this back after demo
+ createButton("Reset", resetMe);
