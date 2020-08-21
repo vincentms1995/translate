@@ -1,8 +1,9 @@
 body{
+    font-family: 'Montserrat', sans-serif;
     height: auto;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-rows: 100px 400px 50px;
+    justify-items: center;
     background-image: linear-gradient(to left, #494949, #fbfbfb);
    
 }
@@ -15,6 +16,29 @@ body{
     grid-template-columns: 100px 100px 100px;
     border: 20px solid #494949;
     border-radius: 15px;
+}
+
+#buttons-container{
+    width: auto;
+    height: 100px;
+    border: 2px solid black;
+}
+
+.button{
+    border-radius: 15px;
+    height: 50px;
+    width: 100px;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    background-color:black;
+    transition: 1s;
+    
+}
+.button:hover{
+    color: black;
+    background-color: white;
+    transition: 1s;
 }
 
 .container{

@@ -13,6 +13,7 @@ const createButton = (name, event) =>{
     let node = document.createElement("button");
     let text = document.createTextNode(name);
     node.addEventListener("click", event);
+    node.setAttribute("class", "button");
     node.appendChild(text);
     document.getElementsByTagName('body')[0].appendChild(node);
 }
@@ -36,6 +37,8 @@ const resetMe = () =>{
         div.innerHTML = '';
         div.style.pointerEvents = 'auto';
     });
+
+    isX = true;
 }
 
 const placeTurn = (obj) =>{
