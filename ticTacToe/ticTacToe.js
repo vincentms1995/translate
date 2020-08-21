@@ -1,5 +1,14 @@
 let isX = true;
 let divElements=[];
+let winningCombinations = {
+    row1 : ["game-cell-1","game-cell-2","game-cell-3"],
+    row2 : ["game-cell-4","game-cell-5","game-cell-6"],
+    row3 : ["game-cell-7","game-cell-8","game-cell-9"],
+    col1 : ["game-cell-1","game-cell-4","game-cell-7"],
+    col2 : ["game-cell-2","game-cell-5","game-cell-8"],
+    col3 : ["game-cell-3","game-cell-6","game-cell-9"]
+};
+
 const createButton = (name, event) =>{
     let node = document.createElement("button");
     let text = document.createTextNode(name);
@@ -30,22 +39,21 @@ const resetMe = () =>{
 }
 
 const placeTurn = (obj) =>{
-    // console.log("You clicked me!");
+    console.log(`You clicked ${obj.id}`);
     // the code on top works
     
-    if(isX)
-    {
+    if(isX){
         console.log('X turn');
-        isX = false;  
         obj.innerHTML = 'X';
         obj.style.pointerEvents = "none";
+        isX = false; 
         
     }
     else{
         console.log('O turn');
         obj.innerHTML = 'O';
-        isX = true;
         obj.style.pointerEvents = "none";
+        isX = true;
     }
 }
 
