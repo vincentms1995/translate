@@ -11,8 +11,8 @@ body {
 }
 
 #ticTacToe {
-  height: 300px;
-  width: 300px;
+  height: 305px;
+  width: 305px;
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 100px 100px 100px;
@@ -46,6 +46,7 @@ body {
   background-color: white;
   -webkit-transition: 1s;
   transition: 1s;
+  cursor: pointer;
 }
 
 .container {

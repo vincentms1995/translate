@@ -1,13 +1,8 @@
 let isX = true;
 let divElements=[];
-let winningCombinations = {
-    row1 : ["game-cell-1","game-cell-2","game-cell-3"],
-    row2 : ["game-cell-4","game-cell-5","game-cell-6"],
-    row3 : ["game-cell-7","game-cell-8","game-cell-9"],
-    col1 : ["game-cell-1","game-cell-4","game-cell-7"],
-    col2 : ["game-cell-2","game-cell-5","game-cell-8"],
-    col3 : ["game-cell-3","game-cell-6","game-cell-9"]
-};
+let moveCount =0;
+let tempArrayX = [];
+let tempArrayO = [];
 
 const createButton = (name, event) =>{
     let node = document.createElement("button");
@@ -37,8 +32,11 @@ const resetMe = () =>{
         div.innerHTML = '';
         div.style.pointerEvents = 'auto';
     });
-
+    moveCount=0;
     isX = true;
+    tempArrayX = [];
+    tempArrayO = [];
+
 }
 
 const placeTurn = (obj) =>{
@@ -50,7 +48,6 @@ const placeTurn = (obj) =>{
         obj.innerHTML = 'X';
         obj.style.pointerEvents = "none";
         isX = false; 
-        
     }
     else{
         console.log('O turn');
@@ -58,11 +55,21 @@ const placeTurn = (obj) =>{
         obj.style.pointerEvents = "none";
         isX = true;
     }
+    // checkWinner(tempArrayX,tempArrayO)
+    moveCount++;
+    console.log(moveCount);
+}
+
+const checkWinner = () =>{
+    
+    
+ 
 }
 
 
-for(let ctr = 1; ctr<=9; ctr++){
-    createDiv(`game-cell-${ctr}`, placeTurn);
+for(let ctr = 0; ctr<9; ctr++){
+    let name=`game-cell-${ctr}`;
+    createDiv(name, placeTurn);
 }
 
 // bring this back after demo

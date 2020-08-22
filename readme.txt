@@ -101,6 +101,14 @@ ______________________
 max number of turns = 9
 min number of turns for win = 5
 
+
+
+Store the contents of the first cell of the row/column/diagonal (starting from the top and/or right).
+
+Go down each row/column/diagonal and see if the contents of all the successive cells match the first cell.
+
+If they do, return the symbol for the winning piece, otherwise, return false;
+
 -Vince 8/20/20
 </log>
 
@@ -117,4 +125,16 @@ implement it in my code.
 I will push this version on my repo so that can save my progress 
 
 -Vince 8/21/20
+</log>
+
+<log>
+I am going to try to do the scientific method so that I will be able to solve the problem of how to determine the winner of tic tac toe game
+
+Question/Statement of the problem : How to determine the winner of Tic Tac toe?
+
+Googles answer
+If the board is n × n then there are n rows, n columns, and 2 diagonals.
+ Check each of those for all-X's or all-O's to find a winner. 
+ If it only takes x < n consecutive squares to win, then it's a little more complicated. 
+ The most obvious solution is to check each x × x square for a winner
 </log>

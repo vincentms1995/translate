@@ -9,8 +9,8 @@ body{
 }
 
 #ticTacToe{
-    height: 300px;
-    width: 300px;
+    height: 305px;
+    width: 305px;
     display: grid;
     grid-template-rows: 100px 100px 100px;
     grid-template-columns: 100px 100px 100px;
@@ -39,6 +39,7 @@ body{
     color: black;
     background-color: white;
     transition: 1s;
+    cursor: pointer;
 }
 
 .container{
