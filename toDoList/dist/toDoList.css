@@ -1,3 +1,30 @@
 body {
   background-color: white;
+  display: grid;
+}
+
+.container {
+  background-color: gray;
+  height: 100px;
+  width: 500px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  margin: 10px;
+  color: beige;
+  border: 10px solid black;
+  border-radius: 10px;
+  transition: 1s;
+}
+.container input[type=text] {
+  height: 25px;
+  width: auto;
+}
+.container input[type=checkbox] {
+  height: 25px;
+  width: 25px;
+}
+.container button {
+  align-items: flex-end;
 }

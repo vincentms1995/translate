@@ -1,29 +1,73 @@
-const createListItem = (name, event) =>{
-    let node = document.createElement("div");
-    let text = document.createTextNode(name);
+let addButton = document.getElementById('add');
+addButton.setAttribute('onClick', "getString()");
+
+
+
+const createListItem = (name) =>{
+    let node = document.createElement("li");
+    let textbox = document.createElement("input");
+    textbox.setAttribute("type","text");
+    textbox.setAttribute("value",name)
+    textbox.disabled = true;
+    let checkBox = document.createElement("input");
+    checkBox.setAttribute('type','checkbox');
+    node.setAttribute("class", "container to-do");
     // node.setAttribute("onClick", "placeTurn(this)");
-    node.setAttribute("id",name)
-    node.setAttribute("class", "container");
-    node.appendChild(text);
-    //createButton('add','addListItem')
-    document.getElementsByTagName('body')[0].appendChild(node);
+    checkBox.addEventListener("change", function(){
+        const parent = this.parentNode;
+        console.log(parent.id);
+        parent.remove();
+        document.getElementById("completed").appendChild(parent);
+    });
+
+    
+
+    node.appendChild(checkBox);
+    node.appendChild(textbox);
+    node.appendChild(createButton('Edit'));
+    node.appendChild(createButton('Delete'));
+    document.getElementById('to-do').appendChild(node);
     
 }
 
 const createButton = (name, event) =>{
     let node = document.createElement("button");
     let text = document.createTextNode(name);
-    node.addEventListener("click", event);
+    if(name === 'Delete'){
+        node.addEventListener("click", function(){
+            const parent = this.parentNode;
+            
+            parent.remove();
+
+        });
+    }else if(name==='Edit'){
+        node.addEventListener("click", function(){
+            const parent = this.parentNode;
+            parent.children[1].disabled= !parent.children[1].disabled;
+            
+        });
+    }
+    
     node.setAttribute("class", "button");
     node.appendChild(text);
-    document.getElementsByTagName('body')[0].appendChild(node);
+    return node;
 }
 
-let addButton = document.getElementById('add');
-addButton.setAttribute('onClick', "getString()");
+const editListItem = () =>{
+    console.log("add")
+}
+
+
+
 
 const getString = () =>{
     let listItem = document.getElementById('listItem');
-    console.log(listItem.value);
-    createListItem(listItem.value);
+    if(listItem.value === ''){
+        return alert("Please Input a value");
+    }
+    else{
+        console.log(listItem.value);
+        createListItem(listItem.value);
+    }
+    
 }
