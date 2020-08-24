@@ -138,3 +138,22 @@ If the board is n × n then there are n rows, n columns, and 2 diagonals.
  If it only takes x < n consecutive squares to win, then it's a little more complicated. 
  The most obvious solution is to check each x × x square for a winner
 </log>
+
+<log>
+Added A to do list part of project still in initial planning but I have the general idea in place
+
+create Psuedocode
+-Input list item
+-Click button
+-if list item text box empty alert "List an item please"
+-else if not empty 
+      - get list item save to string 
+      - put list item in to-do section
+      - in to do list item there must be an edit and delete button and also checkbox
+      - if check box click add to completed
+            -if item completed add strike through to them list item
+            -if item is unchecked return item to to-do section
+      - if edit clicked show text box to edit list item
+      - if delete clicked delete item
+-Vince 8/24/2020
+</log>
