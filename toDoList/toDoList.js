@@ -5,19 +5,35 @@ addButton.setAttribute('onClick', "getString()");
 
 const createListItem = (name) =>{
     let node = document.createElement("li");
+
     let textbox = document.createElement("input");
     textbox.setAttribute("type","text");
     textbox.setAttribute("value",name)
     textbox.disabled = true;
+
+
     let checkBox = document.createElement("input");
     checkBox.setAttribute('type','checkbox');
+
     node.setAttribute("class", "container to-do");
-    // node.setAttribute("onClick", "placeTurn(this)");
+  
     checkBox.addEventListener("change", function(){
         const parent = this.parentNode;
-        console.log(parent.id);
+        const id = parent.parentNode.id;
         parent.remove();
-        document.getElementById("completed").appendChild(parent);
+        if(id === 'to-do')
+        {
+            parent.children[1].disabled = true;
+            parent.children[2].disabled = true;
+            document.getElementById("completed").appendChild(parent);
+            
+        }
+        else if(id === 'completed'){
+            const toDo = document.getElementById("to-do");
+            parent.children[1].disabled = true;
+            parent.children[2].disabled = false;
+            toDo.appendChild(parent);
+        }
     });
 
     
@@ -26,6 +42,8 @@ const createListItem = (name) =>{
     node.appendChild(textbox);
     node.appendChild(createButton('Edit'));
     node.appendChild(createButton('Delete'));
+    
+    
     document.getElementById('to-do').appendChild(node);
     
 }
@@ -47,17 +65,11 @@ const createButton = (name, event) =>{
             
         });
     }
-    
+    node.setAttribute("id",name);
     node.setAttribute("class", "button");
     node.appendChild(text);
     return node;
 }
-
-const editListItem = () =>{
-    console.log("add")
-}
-
-
 
 
 const getString = () =>{

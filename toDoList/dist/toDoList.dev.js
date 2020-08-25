@@ -11,13 +11,22 @@ var createListItem = function createListItem(name) {
   textbox.disabled = true;
   var checkBox = document.createElement("input");
   checkBox.setAttribute('type', 'checkbox');
-  node.setAttribute("class", "container to-do"); // node.setAttribute("onClick", "placeTurn(this)");
-
+  node.setAttribute("class", "container to-do");
   checkBox.addEventListener("change", function () {
     var parent = this.parentNode;
-    console.log(parent.id);
+    var id = parent.parentNode.id;
     parent.remove();
-    document.getElementById("completed").appendChild(parent);
+
+    if (id === 'to-do') {
+      parent.children[1].disabled = true;
+      parent.children[2].disabled = true;
+      document.getElementById("completed").appendChild(parent);
+    } else if (id === 'completed') {
+      var toDo = document.getElementById("to-do");
+      parent.children[1].disabled = true;
+      parent.children[2].disabled = false;
+      toDo.appendChild(parent);
+    }
   });
   node.appendChild(checkBox);
   node.appendChild(textbox);
@@ -42,13 +51,10 @@ var createButton = function createButton(name, event) {
     });
   }
 
+  node.setAttribute("id", name);
   node.setAttribute("class", "button");
   node.appendChild(text);
   return node;
-};
-
-var editListItem = function editListItem() {
-  console.log("add");
 };
 
 var getString = function getString() {

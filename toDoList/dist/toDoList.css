@@ -1,10 +1,61 @@
 body {
   background-color: white;
   display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-auto-columns: auto;
+  background-color: gray;
+  font-family: "Alata", sans-serif;
+}
+
+h1 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-size: 100px;
+}
+
+h1, h2 {
+  text-align: center;
+  font-family: "Permanent Marker", cursive;
+}
+
+#add-item {
+  background-color: none;
+  display: flex;
+  height: 100px;
+  flex-wrap: wrap;
+  width: 500px;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin: 20px;
+}
+#add-item input[type=text] {
+  font-size: 25px;
+  height: 30px;
+  width: 375px;
+  margin: 10px;
+  border-radius: 10px;
+  padding-left: 10px;
+  border-style: none;
+}
+#add-item button {
+  height: 40px;
+  width: 70px;
+  border-radius: 10px;
+  transition: 0.5s;
+  border-style: none;
+}
+#add-item button:hover {
+  transition: 0.5s;
+  background-color: black;
+  color: white;
+  cursor: pointer;
 }
 
 .container {
-  background-color: gray;
+  text-align: center;
+  background-color: #524646;
   height: 100px;
   width: 500px;
   display: flex;
@@ -13,18 +64,51 @@ body {
   padding: 10px;
   margin: 10px;
   color: beige;
-  border: 10px solid black;
   border-radius: 10px;
   transition: 1s;
 }
 .container input[type=text] {
-  height: 25px;
+  height: 30px;
   width: auto;
+  color: black;
+  font-size: 20px;
+  background-color: white;
+  border-style: none;
+  border-color: none;
+  margin: 10px;
+}
+.container input[type=text]:disabled {
+  height: 30px;
+  width: auto;
+  color: white;
+  font-size: 20px;
+  background-color: #524646;
+  border-style: none;
+  border-color: none;
 }
 .container input[type=checkbox] {
   height: 25px;
   width: 25px;
+  border-style: none;
+  border-color: none;
+  cursor: pointer;
+  padding: 10px;
 }
 .container button {
-  align-items: flex-end;
+  margin: 10px;
+  padding: 10px;
+  background-color: navajowhite;
+  border-style: none;
+  border-radius: 10px;
+  align-self: center;
+  cursor: pointer;
+}
+
+#completed {
+  transition: 1s;
+}
+#completed input[type=text] {
+  height: 25px;
+  width: auto;
+  text-decoration: line-through;
 }
