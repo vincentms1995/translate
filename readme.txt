@@ -157,3 +157,8 @@ create Psuedocode
       - if delete clicked delete item
 -Vince 8/24/2020
 </log>
+
+<log>
+Finished the to do list application
+-Vince 8/25/2020
+</log>
