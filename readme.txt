@@ -160,5 +160,7 @@ create Psuedocode
 
 <log>
 Finished the to do list application
+
+Add remarks and Date
 -Vince 8/25/2020
 </log>

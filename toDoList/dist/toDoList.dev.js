@@ -4,7 +4,10 @@ var addButton = document.getElementById('add');
 addButton.setAttribute('onClick', "getString()");
 
 var createListItem = function createListItem(name) {
+  var today = new Date();
+  var date = today.getMonth() + 1 + '/' + today.getDate() + '/' + today.getFullYear();
   var node = document.createElement("li");
+  var text = document.createTextNode(date);
   var textbox = document.createElement("input");
   textbox.setAttribute("type", "text");
   textbox.setAttribute("value", name);
@@ -16,10 +19,14 @@ var createListItem = function createListItem(name) {
     var parent = this.parentNode;
     var id = parent.parentNode.id;
     parent.remove();
+    var today = new Date();
+    var timeNow = time = today.getHours() + ":" + today.getMinutes();
+    var text = document.createTextNode(timeNow);
 
     if (id === 'to-do') {
       parent.children[1].disabled = true;
-      parent.children[2].disabled = true;
+      parent.children[2].disabled = true; // parent.appendChild(text);
+
       document.getElementById("completed").appendChild(parent);
     } else if (id === 'completed') {
       var toDo = document.getElementById("to-do");
@@ -28,6 +35,7 @@ var createListItem = function createListItem(name) {
       toDo.appendChild(parent);
     }
   });
+  node.appendChild(text);
   node.appendChild(checkBox);
   node.appendChild(textbox);
   node.appendChild(createButton('Edit'));

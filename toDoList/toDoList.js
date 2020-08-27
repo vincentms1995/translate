@@ -4,8 +4,10 @@ addButton.setAttribute('onClick', "getString()");
 
 
 const createListItem = (name) =>{
+    var today = new Date();
+    var date = (today.getMonth()+1)+'/'+today.getDate()+'/'+today.getFullYear();
     let node = document.createElement("li");
-
+    let text = document.createTextNode(date)
     let textbox = document.createElement("input");
     textbox.setAttribute("type","text");
     textbox.setAttribute("value",name)
@@ -21,10 +23,14 @@ const createListItem = (name) =>{
         const parent = this.parentNode;
         const id = parent.parentNode.id;
         parent.remove();
+        let today = new Date;
+        let timeNow = time = today.getHours() + ":" + today.getMinutes();
+        let text = document.createTextNode(timeNow);
         if(id === 'to-do')
         {
             parent.children[1].disabled = true;
             parent.children[2].disabled = true;
+            // parent.appendChild(text);
             document.getElementById("completed").appendChild(parent);
             
         }
@@ -37,7 +43,7 @@ const createListItem = (name) =>{
     });
 
     
-
+    node.appendChild(text);
     node.appendChild(checkBox);
     node.appendChild(textbox);
     node.appendChild(createButton('Edit'));
