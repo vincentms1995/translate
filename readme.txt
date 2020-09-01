@@ -164,3 +164,34 @@ Finished the to do list application
 Add remarks and Date
 -Vince 8/25/2020
 </log>
+
+<style>
+  div {
+    height: 40px;
+    width: 70%;
+    background: black;
+    margin: 50px auto;
+    border-radius: 5px;
+  }
+
+  #rect {
+    animation-name: rainbow;
+    animation-duration: 4s;
+
+  }
+  @keyframes rainbow{
+    0%{
+      background-color: blue;
+    }
+    50%{
+      background-color: green;
+    }
+    100%{
+      background-color: yellow;
+    }
+  }
+
+
+
+</style>
+I wanted to save this snippet of code.

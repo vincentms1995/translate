@@ -1,0 +1,70 @@
+// font-family: 'Noto Sans JP', sans-serif;
+// font-family: 'Roboto', sans-serif; 
+
+body{
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    scroll-behavior: smooth;
+    background: black;
+    color: white;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+header{
+    font-family: 'Roboto', sans-serif;
+    width: auto;
+    display: flex;
+    flex-flow: column; 
+    justify-content: center;
+    align-items: center;
+}
+
+#survey-form{
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+    display: flex;
+    padding : 30px;
+    width: auto;
+    height: auto;
+    flex-flow: column;
+    justify-content: center;
+    // align-items: center;
+    line-height: 6.3vh;
+
+}
+#radio-buttons{
+    display: flex;
+    flex-flow: column;
+    padding-left: 30px;
+}
+
+#certifications{
+    display: flex;
+    flex-flow: column;
+    padding-left: 30px;
+}
+
+.input{
+    width: 98%;
+    height: 40px;
+    font-family: 'Noto Sans JP', sans-serif;
+    margin: 0px;
+}
+
+.comments{
+    display: flex;
+    flex-flow: column;
+    width: 98%;
+    textarea{
+        width: auto;
+        height: 200px;
+        resize: none;
+        font-size: 16px;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+    margin-bottom: 20px;
+}
+
