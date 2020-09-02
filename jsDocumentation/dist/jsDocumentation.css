@@ -62,6 +62,7 @@ main {
   display: flex;
   flex-flow: column;
   background-color: lightgray;
+  text-align: left;
 }
 .main-section .code-container code {
   padding: 5px;
